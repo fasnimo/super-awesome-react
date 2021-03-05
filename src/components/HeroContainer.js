@@ -4,7 +4,7 @@ class HeroContainer extends Component {
     render() {
         return (
             <div>
-                
+                HI
             </div>
         );
     }
