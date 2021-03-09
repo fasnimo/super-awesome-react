@@ -1,4 +1,5 @@
 import React from 'react';
+import HeroContainer from "./components/HeroContainer"
 
 const App = () => {
   return (
