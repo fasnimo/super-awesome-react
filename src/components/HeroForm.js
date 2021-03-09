@@ -38,11 +38,12 @@ class HeroForm extends Component {
                         onChange={this.handleChange}
                         text="text"
                     />
+                    <br/>
                     <label>POWER</label>
                     <input 
                         name="power"
                         value={this.state.power}
-                        onChange={this.state.handleChange}
+                        onChange={this.handleChange}
                         text="text"
                     />
                     <br/>

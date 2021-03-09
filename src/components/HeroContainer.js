@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-// import HeroForm from "./HeroForm"
-// import HeroList from "./HeroList"
-import Router from "./Router"
+import HeroForm from "./HeroForm"
+import HeroList from "./HeroList"
 import { connect } from "react-redux"
 import { fetchHero } from "../actions/heroAction"
-// import { Route, Switch } from "react-router-dom"
+import { Route, Switch } from "react-router-dom"
 
 class HeroContainer extends Component {
 
@@ -15,7 +14,10 @@ class HeroContainer extends Component {
     render() {
         return (
             <div>
-                <Router props={this.props.state}/>
+                <Switch>
+                    <Route exact path="/heros/new" component={HeroForm}/>
+                    <Route exact path="/heros" render={() => <HeroList heros={this.props.heros}/>}/>
+                </Switch>
             </div>
         );
     }

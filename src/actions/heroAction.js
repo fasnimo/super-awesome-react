@@ -16,8 +16,10 @@ export const addHero = (data) => {
             },
             body: JSON.stringify({name: data.name, power: data.power})
         })
-        .then(resp => resp.json())
-        .then(hero => dispatch({type: "ADD_HERO", payload: hero}))
-        window.location.href = "http://localhost:3000/heros"
+        .then(resp => console.log("firstThen", resp.json()))
+        .then(hero => console.log(hero))
+        // .then(resp => resp.json())
+        // .then(hero => dispatch({type: "ADD_HERO", payload: hero}))
+        window.location.href = "http://localhost:3001/heros"
     }
 }

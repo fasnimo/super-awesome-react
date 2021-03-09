@@ -1,13 +1,10 @@
 import React from 'react';
-import { NavLink } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     return (
         <div className="navbar">
-            <Nav>
-                <NavLink href="/heros/new">Form</NavLink>
-                <NavLink href="/heros">List</NavLink>
-            </Nav>
+            <Link to="/heros/new">Form</Link> | <Link to="/heros">List</Link>
         </div>
     );
 };

@@ -1,4 +1,4 @@
-export const heroReducer = (state) => {
+export const heroReducer = (state = [], action) => {
     switch(action.type){
         case "FETCH_HERO":
             return action.payload
