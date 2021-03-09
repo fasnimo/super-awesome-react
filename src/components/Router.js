@@ -7,6 +7,7 @@ const Router = () => {
     return (
         <div>
             <Switch>
+                <Route exact path="/" component={HeroForm} />
                 <Route exact path="/heros" component={HeroList}/>
                 <Route exact path="/heros/new" component={HeroForm}/>
             </Switch>

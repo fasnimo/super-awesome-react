@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import HeroForm from "./HeroForm"
 // import HeroList from "./HeroList"
 import Router from "./Router"
-import { connect } from "./react-redux"
+import { connect } from "react-redux"
 import { fetchHero } from "../actions/heroAction"
 // import { Route, Switch } from "react-router-dom"
 
@@ -27,4 +27,4 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps,{fetchHero})HeroContainer;
+export default connect(mapStateToProps,{fetchHero})(HeroContainer);
