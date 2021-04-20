@@ -24,16 +24,9 @@ class HeroContainer extends Component {
 }
 
 const mapStateToProps = (state) => {
-    // debugger
-    // let herosName;
-    // let herosPower
-    // state.map(i => {
-    //     herosName = i.name
-    //     herosPower = i.power
-    // })
+   
     return {
-        heros: state
-        
+        heros: state  
     }
 }
 
