@@ -11,13 +11,15 @@ const Body = ({id, name, power}) => {
 }
 
 const HeroList = ({heros}) => {
-    // debugger
     return (
         <div className="review-list">
+            <hr/>
             <ul>
                 {heros.map(Body)}
             </ul>
+            
         </div>
+        
     );
 };
 
