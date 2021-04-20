@@ -30,8 +30,9 @@ class HeroForm extends Component {
     render() {
         return (
             <div>
+                <hr/>
                 <form onSubmit={this.handleSubmit}>
-                    <label>NAME</label>
+                    <label>NAME:</label>
                     <input 
                         name="name"
                         value={this.state.name}
@@ -39,7 +40,8 @@ class HeroForm extends Component {
                         text="text"
                     />
                     <br/>
-                    <label>POWER</label>
+                    <br/>
+                    <label>POWER:</label>
                     <input 
                         name="power"
                         value={this.state.power}

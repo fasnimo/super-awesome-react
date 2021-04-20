@@ -11,7 +11,7 @@ const Body = ({id, name, power}) => {
 }
 
 const HeroList = ({heros}) => {
-    debugger
+    // debugger
     return (
         <div className="review-list">
             <ul>
