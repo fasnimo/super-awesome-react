@@ -16,8 +16,7 @@ const HeroList = ({heros}) => {
             <hr/>
             <ul>
                 {heros.map(Body)}
-            </ul>
-            
+            </ul>   
         </div>
         
     );
