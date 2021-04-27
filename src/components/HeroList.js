@@ -13,7 +13,7 @@ const Body = ({id, name, power}) => {
 const HeroList = ({heros}) => {
     return (
         <div className="review-list">
-            <hr/>
+            
             <ul>
                 {heros.map(Body)}
             </ul>   

@@ -30,7 +30,7 @@ class HeroForm extends Component {
     render() {
         return (
             <div>
-                <hr/>
+               
                 <form onSubmit={this.handleSubmit}>
                     <label>NAME:</label>
                     <input 
